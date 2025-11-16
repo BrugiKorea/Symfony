@@ -1,0 +1,66 @@
+App\Entity\Location:
+    properties:
+        city:
+            - NotBlank:
+                  message: 'Miasto jest wymagane.'
+                  groups: ['create', 'edit']
+            - Length:
+                  min: 2
+                  max: 100
+                  minMessage: 'Nazwa miasta musi mieć co najmniej 2 znaki.'
+                  maxMessage: 'Nazwa miasta może mieć maksymalnie 100 znaków.'
+                  groups: ['create', 'edit']
+
+        country:
+            - NotBlank:
+                  message: 'Kraj jest wymagany.'
+                  groups: ['create', 'edit']
+            - Length:
+                  min: 2
+                  max: 100
+                  minMessage: 'Nazwa kraju musi mieć co najmniej 2 znaki.'
+                  maxMessage: 'Nazwa kraju może mieć maksymalnie 100 znaków.'
+                  groups: ['create', 'edit']
+
+        latitude:
+            - NotNull:
+                  message: 'Szerokość geograficzna jest wymagana.'
+                  groups: ['create', 'edit']
+            - Range:
+                  min: -90
+                  max: 90
+                  notInRangeMessage: 'Szerokość geograficzna musi być między -90 a 90.'
+                  groups: ['create', 'edit']
+
+        longitude:
+            - NotNull:
+                  message: 'Długość geograficzna jest wymagana.'
+                  groups: ['create', 'edit']
+            - Range:
+                  min: -180
+                  max: 180
+                  notInRangeMessage: 'Długość geograficzna musi być między -180 a 180.'
+                  groups: ['create', 'edit']
+
+
+App\Entity\Measurement:
+    properties:
+        date:
+            - NotNull:
+                  message: 'Data pomiaru jest wymagana.'
+                  groups: ['create', 'edit']
+
+        celsius:
+            - NotBlank:
+                  message: 'Temperatura nie może być pusta.'
+                  groups: ['create', 'edit']
+            - Range:
+                  min: -100
+                  max: 60
+                  notInRangeMessage: 'Temperatura musi być pomiędzy -100 a 60 °C.'
+                  groups: ['create', 'edit']
+
+        location:
+            - NotNull:
+                  message: 'Musisz wybrać lokalizację.'
+                  groups: ['create', 'edit']
