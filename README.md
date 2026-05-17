@@ -1,9 +1,10 @@
-## Symfony
+# Symfony 
 
-Repozytorium zawiera zadania laboratoryjne zrealizowane w frameworku Symfony, w ramach których zaimplementowano podstawowe mechanizmy backendowe aplikacji webowej.
+Repozytorium zawiera projekt aplikacji "Pogodynka" realizowany przyrostowo podczas zajęć laboratoryjnych. Projekt obejmuje budowę systemu zarządzania lokalizacjami i pomiarami pogodowymi.
 
-W kodzie przygotowano strukturę opartą na kontrolerach i routingu oraz dynamiczne szablony Twig odpowiedzialne za renderowanie widoków.
+## Struktura projektu (Branche)
 
-Kluczowa część laboratoriów dotyczyła obsługi użytkowników, w tym logowania, wylogowywania, hashowania i weryfikacji haseł, a także autoryzacji bazującej na mechanizmie Basic Auth oraz konfiguracji hierarchii ról.
-
-Całość została uzupełniona o implementację standardowych operacji CRUD służących do zarządzania danymi.
+* [cite_start]**Branch lab-b (Inicjalizacja):** Konfiguracja szkieletu aplikacji Symfony oraz przygotowanie modelu bazy danych (diagram ERD)[cite: 6, 9, 26].
+* **Branch lab-c (Baza danych i Odczyt):** Implementacja encji i relacji ManyToOne. [cite_start]Stworzenie kontrolera i widoków Twig wyświetlających dane pobrane z bazy SQLite[cite: 233, 358, 623].
+* **Branch lab-d (Formularze i Walidacja):** Implementacja pełnego modułu CRUD. [cite_start]Dodanie formularzy do obsługi danych oraz zaawansowanej walidacji pól po stronie backendu (YAML)[cite: 971, 988, 1158].
+* **Branch lab-e (Security):** Wprowadzenie mechanizmów logowania i wylogowywania. [cite_start]Implementacja użytkowników bazodanowych, hashowania haseł oraz zarządzania dostępem poprzez hierarchię ról[cite: 1476, 1524, 1920, 2229].
