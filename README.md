@@ -1,3 +1,5 @@
+## Symfony
+
 Repozytorium zawiera zadania laboratoryjne zrealizowane w frameworku Symfony, w ramach których zaimplementowano podstawowe mechanizmy backendowe aplikacji webowej.
 
 W kodzie przygotowano strukturę opartą na kontrolerach i routingu oraz dynamiczne szablony Twig odpowiedzialne za renderowanie widoków.
