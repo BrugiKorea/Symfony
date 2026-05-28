@@ -1,10 +1,10 @@
 # Symfony 
 
-Repozytorium zawiera projekt aplikacji "Pogodynka" realizowany przyrostowo podczas zajęć laboratoryjnych. Projekt obejmuje budowę systemu zarządzania lokalizacjami i pomiarami pogodowymi.
+This repository contains the "Weather App" project, developed incrementally during laboratory classes. The project involves building a system for managing locations and weather measurements.
 
-## Struktura projektu (Branche)
+## Project Structure (Branches)
 
-* **Branch lab-b (Inicjalizacja):** Konfiguracja szkieletu aplikacji Symfony oraz przygotowanie modelu bazy danych (diagram ERD).
-* **Branch lab-c (Baza danych i Odczyt):** Implementacja encji i relacji ManyToOne. Stworzenie kontrolera i widoków Twig wyświetlających dane pobrane z bazy SQLite.
-* **Branch lab-d (Formularze i Walidacja):** Implementacja pełnego modułu CRUD. Dodanie formularzy do obsługi danych oraz zaawansowanej walidacji pól po stronie backendu (YAML).
-* **Branch lab-e (Security):** Wprowadzenie mechanizmów logowania i wylogowywania. Implementacja użytkowników bazodanowych, hashowania haseł oraz zarządzania dostępem poprzez hierarchię ról.
+* **Branch lab-b (Initialization):** Configuration of the Symfony application skeleton and preparation of the database model (ERD diagram).
+* **Branch lab-c (Database and Read):** Implementation of entities and ManyToOne relationships. Creation of a controller and Twig views displaying data retrieved from the SQLite database.
+* **Branch lab-d (Forms and Validation):** Implementation of a full CRUD module. Addition of forms for data handling and advanced backend field validation (YAML).
+* **Branch lab-e (Security):** Introduction of login and logout mechanisms. Implementation of database users, password hashing, and access management through a role hierarchy.
